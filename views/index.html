@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function getFeature(featureName, username){
+			$.get( "api/TestResult/" + featureName + "/" + username, function( data ) {
+			  $( ".result" ).html( data );
+			});
+		}
+	</script>
+</head>
+<body>
+	<h1>Bla Bla Blo</h1>
+
+
+	feature name: <input type="text" name="feature" id="featureName"><br>
+	user name: <input type="text" name="username" id="username"><br>
+	<button onclick="getFeature(document.getElementById('fetureName').value,document.getElementById('username').value)"> Get </button>
+
+	<div class="result"> </div>
+
+</body>
+</html>
