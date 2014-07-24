@@ -29,3 +29,7 @@ var db = {
 module.exports.getFeature = function(baseFeatureName){
 	return db[baseFeatureName];
 }
+
+module.exports.getAllFeatures = function(){
+	return db;
+}

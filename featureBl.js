@@ -1,8 +1,6 @@
 
 module.exports.getFeatureName = function(feature, hash){
 
-	console.log(feature[0])
-
 	var prevPrecent = 0;
 	for(var i = 0 ; i < feature.length ; i++ ){
 
